@@ -929,5 +929,8 @@
     "Desplaçament de temps (minuts)",
 
     // Option in the time format screen for changing the time offset between negative and positive numbers.
-    "Desplaçament negatiu"
+    "Desplaçament negatiu",
+
+    // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
+    "Canals no llegits primer"
 ]

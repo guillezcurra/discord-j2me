@@ -59,12 +59,17 @@ public class Channel extends HasUnreads {
         for (int i = 0; i < arr.size(); i++) {
             for (int a = 0; a < arr.size(); a++) {
                 JSONObject ch = arr.getObject(a);
+
                 if (ch.getInt("position", i) != i) continue;
 
                 int type = ch.getInt("type", 0);
                 if (type != 0 && type != 5 && type != 15 && type != 16) continue;
 
-                result.addElement(new Channel(ch));
+                if(Settings.unreadChannelsOnTop) {
+                    Channel c = new Channel(ch);
+                    if (c.hasUnreads()) result.insertElementAt(c,0);
+                }
+                else result.addElement(new Channel(ch));
             }
         }
         // Add text chats of voice channels at the end

@@ -121,6 +121,7 @@ public class SettingsScreen extends ListScreen implements CommandListener, Strin
 //#ifdef OVER_100KB
                 Locale.get(SEND_TYPING),
 //#endif
+                Locale.get(UNREAD_CHANNELS_ONTOP),
             }, {
                 // Notifications
                 Locale.get(NOTIFICATIONS_ALL),
@@ -256,6 +257,7 @@ public class SettingsScreen extends ListScreen implements CommandListener, Strin
 //#ifdef OVER_100KB
                 boolValues,
 //#endif
+                boolValues,
             }, {
                 // Notifications
                 boolValues,
@@ -313,6 +315,7 @@ public class SettingsScreen extends ListScreen implements CommandListener, Strin
 //#ifdef OVER_100KB
                 Settings.sendTyping ? 1 : 0,
 //#endif
+                Settings.unreadChannelsOnTop ? 1 : 0,
             }, {
                 // Notifications
                 Settings.showNotifsAll ? 1 : 0, 

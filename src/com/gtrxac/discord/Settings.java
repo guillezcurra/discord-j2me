@@ -47,6 +47,7 @@ public class Settings {
     static boolean showNotifsPings;
     static boolean showNotifsDMs;
     static boolean showNotifAlert;
+    static boolean unreadChannelsOnTop;
 //#ifdef PIGLER_SUPPORT
     static boolean showNotifPigler;
 //#endif
@@ -238,6 +239,7 @@ public class Settings {
         highRamMode = getBoolRecord(isHighRam);
         showNotifAlert = getBoolRecord(true);
         playNotifSound = getBoolRecord(true);
+        unreadChannelsOnTop = getBoolRecord(false);
 //#ifdef PIGLER_SUPPORT
         showNotifPigler =
 //#endif
@@ -370,6 +372,7 @@ public class Settings {
         setBoolRecord(highRamMode);
         setBoolRecord(showNotifAlert);
         setBoolRecord(playNotifSound);
+        setBoolRecord(unreadChannelsOnTop);
         setBoolRecord(
 //#ifdef PIGLER_SUPPORT
             showNotifPigler
