@@ -927,5 +927,8 @@
     null,
 
     // Option in the time format screen for changing the time offset between negative and positive numbers.
+    null,
+
+    // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
     null
 ]

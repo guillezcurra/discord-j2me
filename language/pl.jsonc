@@ -927,5 +927,8 @@
     "Przesunięcie czasu (minuty)",
 
     // Option in the time format screen for changing the time offset between negative and positive numbers.
-    "Ujemne przesunięcie"
+    "Ujemne przesunięcie",
+
+    // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
+    "Sort channels by"
 ]
