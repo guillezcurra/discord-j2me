@@ -930,5 +930,7 @@
     null,
 
     // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
+    null,
+    null,
     null
 ]

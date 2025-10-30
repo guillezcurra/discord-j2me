@@ -932,5 +932,7 @@
     "Negative offset",
 
     // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
-    "Sort channels by"
+    "Sort channels by",
+    "Position",
+    "Last message"
 ]

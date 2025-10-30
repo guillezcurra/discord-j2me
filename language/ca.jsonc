@@ -932,5 +932,7 @@
     "Desplaçament negatiu",
 
     // Option in the behaviour section for changing the way channels are ordered in a server to show unread ones on top.
-    "Ordena canals per"
+    "Ordena canals per",
+    "Posició",
+    "Darrer missatge"
 ]
