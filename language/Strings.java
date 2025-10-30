@@ -405,7 +405,8 @@ public interface Strings {
     static final int TIME_OFFSET_H = 376;
     static final int TIME_OFFSET_MIN = 377;
     static final int NEGATIVE_OFFSET = 378;
-    static final int UNREAD_CHANNELS_ONTOP = 379;
+    static final int = 379;
     static final int UNREAD_CHANNELS_ONTOP_OPTION1 = 380;
     static final int UNREAD_CHANNELS_ONTOP_OPTION2 = 381;
+}
 }

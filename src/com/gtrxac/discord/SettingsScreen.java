@@ -257,7 +257,7 @@ public class SettingsScreen extends ListScreen implements CommandListener, Strin
 //#ifdef OVER_100KB
                 boolValues,
 //#endif
-                boolValues,
+                { Locale.get(UNREAD_CHANNELS_ONTOP_OPTION1), Locale.get(UNREAD_CHANNELS_ONTOP_OPTION2) },
             }, {
                 // Notifications
                 boolValues,

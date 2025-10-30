@@ -22,6 +22,9 @@ public class Settings {
     static final int AUTO_UPDATE_RELEASE_ONLY = 1;
     static final int AUTO_UPDATE_ALL = 2;
 
+    static final int UNREAD_CHANNELS_POSITION = 0;
+    static final int UNREAD_CHANNELS_LAST_MESSAGE = 1;
+
     static int theme;  // 0 = dark, 1 = light, 2 = black
     static boolean use12hTime;
     static boolean useGateway;
@@ -47,7 +50,7 @@ public class Settings {
     static boolean showNotifsPings;
     static boolean showNotifsDMs;
     static boolean showNotifAlert;
-    static boolean unreadChannelsOnTop;
+    static int unreadChannelsOnTop; // 0 = Position, 1 = Last message
 //#ifdef PIGLER_SUPPORT
     static boolean showNotifPigler;
 //#endif
@@ -239,7 +242,7 @@ public class Settings {
         highRamMode = getBoolRecord(isHighRam);
         showNotifAlert = getBoolRecord(true);
         playNotifSound = getBoolRecord(true);
-        unreadChannelsOnTop = getBoolRecord(false);
+        unreadChannelsOnTop = getIntRecord(Settings.UNREAD_CHANNELS_POSITION);
 //#ifdef PIGLER_SUPPORT
         showNotifPigler =
 //#endif
@@ -372,7 +375,7 @@ public class Settings {
         setBoolRecord(highRamMode);
         setBoolRecord(showNotifAlert);
         setBoolRecord(playNotifSound);
-        setBoolRecord(unreadChannelsOnTop);
+        setIntRecord(unreadChannelsOnTop);
         setBoolRecord(
 //#ifdef PIGLER_SUPPORT
             showNotifPigler
